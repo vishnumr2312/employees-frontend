@@ -1,0 +1,98 @@
+.container-fluid {
+    padding: 2rem;
+}
+
+.search-input-group {
+    position: relative;
+}
+
+.search-input-group .form-control {
+    padding: 14px 12px 14px 2.5rem !important;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.search-input-group .search-icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+    z-index: 10;
+}
+
+.table-card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+.table thead th {
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.table {
+    min-width: 1200px;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+    border: none !important;
+    z-index: 0 !important;
+}
+
+tr {
+    position: relative;
+}
+
+.bottom1-line {
+    position: absolute;
+    bottom: 0px;
+    left: 2%;
+    width: 96%;
+    height: 1px;
+    background-color: #d4d4d4 !important;
+    padding: 0px !important;
+}
+
+.table tbody td {
+    vertical-align: middle;
+}
+
+.table-action-icons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.action-icon {
+    cursor: pointer;
+}
+
+.status-badge.active {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.status-badge.inactive {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 0.25em 0.75em;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    line-height: 1;
+    font-weight: 600;
+}

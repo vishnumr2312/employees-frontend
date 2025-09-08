@@ -1,0 +1,26 @@
+.header {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.toggle {
+    color: #6c757d;
+    cursor: pointer;
+}
+
+.navbar {
+    align-items: center;
+}
+
+.title {
+    color: #007bff !important;
+    font-weight: 600;
+    font-size: 1.8rem !important;
+    margin-top: -2px;
+}
+
+.user-profile {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    cursor: pointer;
+}
