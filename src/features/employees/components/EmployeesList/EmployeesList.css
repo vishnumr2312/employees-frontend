@@ -78,6 +78,22 @@ tr {
     cursor: pointer;
 }
 
+.table-header {
+    padding-left: 20px !important;
+}
+
+.no-more-data {
+    padding-bottom: 32px;
+}
+
+.no-data {
+    padding: 90px 20px 55px 20px !important;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
 .status-badge.active {
     background-color: #d1fae5;
     color: #065f46;
@@ -95,4 +111,10 @@ tr {
     font-size: 0.75rem;
     line-height: 1;
     font-weight: 600;
+}
+
+@media (max-width: 900px) {
+    .no-data {
+        text-align: left;
+    }
 }

@@ -27,7 +27,7 @@ export const TABLE_HEADERS = {
 };
 
 export const TABLE_TEXTS = {
-    NO_EMPLOYEES: "No employees found.",
+    NO_EMPLOYEES: "No employees found",
     NA: "N/A",
 };
 

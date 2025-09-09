@@ -67,9 +67,9 @@ const EmployeesList = () => {
 
     return (
         <div className="p-4">
-            <div className="d-flex flex-column flex-md-row justify-content-between align-items-center mb-4">
+            <div className="d-flex flex-column flex-lg-row justify-content-between align-items-center mb-4">
                 <h2 className="fw-bold text-dark">{PAGE_TEXTS.TITLE}</h2>
-                <div className="d-flex flex-column flex-md-row align-items-center gap-3">
+                <div className="d-flex flex-column flex-lg-row align-items-center gap-3">
                     <div className="search-input-group">
                         <input type="text" placeholder={PAGE_TEXTS.SEARCH_PLACEHOLDER} value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className="form-control" />
                         <Search size={18} className="search-icon" />
@@ -91,7 +91,7 @@ const EmployeesList = () => {
                         <table className="table table-hover mb-0 p-1">
                             <thead>
                                 <tr>
-                                    <th>{TABLE_HEADERS.NAME}</th>
+                                    <th className="table-header">{TABLE_HEADERS.NAME}</th>
                                     <th>{TABLE_HEADERS.ID}</th>
                                     <th>{TABLE_HEADERS.DEPARTMENT}</th>
                                     <th>{TABLE_HEADERS.DESIGNATION}</th>
@@ -129,13 +129,13 @@ const EmployeesList = () => {
                                         </tr>
                                     ))
                                 ) : (
-                                    <tr><td colSpan="8" className="p-5 text-center text-secondary">{TABLE_TEXTS.NO_EMPLOYEES}</td></tr>
+                                    <td colSpan="8" className="no-data">{TABLE_TEXTS.NO_EMPLOYEES}</td>
                                 )}
                             </tbody>
                         </table>
                         <div ref={loadMoreRef} style={{ height: "40px" }} />
                         {isFetchingNextPage && <div className="p-3 text-center text-secondary">{LOADING_TEXTS.LOADING_MORE}</div>}
-                        {!hasNextPage && employees.length > 0 && <div className="p-3 text-center text-muted">{LOADING_TEXTS.NO_MORE}</div>}
+                        {!hasNextPage && employees.length > 10 && <div className="no-more-data text-center text-muted">{LOADING_TEXTS.NO_MORE}</div>}
                     </div>
                 )}
             </div>
